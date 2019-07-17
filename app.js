@@ -21,7 +21,7 @@
 
 	rl.question('filename: ', (filename) => {
 
-		const fln = './notes/' + filename
+		const fln = './notes/' + user + '/' + filename
 
 	fs.exists(fln, (exists) => {
 
