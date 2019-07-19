@@ -1,7 +1,9 @@
 **This is Writecomrade.**
 
 Writecomrade writes files. Cool.
+
 Writecomrade is a true comrade. Cool.
+
 Writecomrade is used in your terminal. Cool.
 
 How to use? If node.js isn't installed on your
