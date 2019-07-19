@@ -10,17 +10,15 @@
 	rl.question('username: ', (name) => {
 	rl.question('password: ', (password) => {
 
-	let tag = Math.floor((Math.random() * 999) + 1)
-	let filename = './logins/' + name + '-' + tag + '.json' 
+	let filename = './logins/' + name + '.json' 
 
-	fs.exists('./logins/' + name + '-' + tag + '.json', (exists) => {
+	fs.exists('./logins/' + name + '.json', (exists) => {
 
 		if (exists) {
 		console.error(name + ' is taken. try again.'); return; }
 
-		const user = name + '-' + tag
-		fs.writeFileSync(filename, '{ "name": "' + user + '", "password": "' + password + '"}', fs.write);
-		console.log('===============\nuser: ' + user + '\npassword: ' + password);
+		fs.writeFileSync(filename, '{ "name": "' + name + '", "password": "' + password + '"}', fs.write);
+		console.log('===============\nuser: ' + name + '\npassword: ' + password);
 		fs.mkdir('./notes/' + user, function (err) {
     		if (err) {
 		console.log('failed to create directory in ./notes/', err);
