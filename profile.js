@@ -19,6 +19,9 @@
 
 		fs.writeFileSync(filename, '{ "name": "' + name + '", "password": "' + password + '"}', fs.write);
 		console.log('===============\nname: ' + name + '\npassword: ' + password);
+		
+	rl.close();
+		
 		fs.mkdir('./notes/' + name, function (err) {
     		if (err) {
 		console.log('failed to create directory in ./notes/', err);
