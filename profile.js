@@ -18,8 +18,8 @@
 		console.error(name + ' is taken. try again.'); return; }
 
 		fs.writeFileSync(filename, '{ "name": "' + name + '", "password": "' + password + '"}', fs.write);
-		console.log('===============\nuser: ' + name + '\npassword: ' + password);
-		fs.mkdir('./notes/' + user, function (err) {
+		console.log('===============\nname: ' + name + '\npassword: ' + password);
+		fs.mkdir('./notes/' + name, function (err) {
     		if (err) {
 		console.log('failed to create directory in ./notes/', err);
 
