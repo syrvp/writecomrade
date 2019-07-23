@@ -13,3 +13,7 @@ that Node.js application on Windows or ios idk.
 To create new profiles, use `node profile.js`.
 To write files, use `node app.js`.
 More features coming soon, comrades.
+
+doesn't work on node versions older than 11.15.0
+or something like that
+I guess.
